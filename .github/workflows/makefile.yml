@@ -2,17 +2,17 @@ name: Makefile CI
 
 on:
   push:
-    branches: [ "android-12.1" ]
+    branches: [ "android-12" ]
   pull_request:
-    branches: [ "android-12.1" ]
+    branches: [ "android-12" ]
 
 jobs:
-  build: true
+  build: 
 
     runs-on: ubuntu-latest
 
 
-    steps:
+    steps: 
     - uses: actions/checkout@v3
 
     - name: configure
